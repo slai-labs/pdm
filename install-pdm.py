@@ -21,7 +21,7 @@ if sys.version_info < (3, 7):
 _plat = platform.system()
 MACOS = _plat == "Darwin"
 WINDOWS = _plat == "Windows"
-REPO = "https://github.com/pdm-project/pdm"
+REPO = "https://github.com/slai-labs/pdm"
 JSON_URL = "https://pypi.org/pypi/pdm/json"
 
 FOREGROUND_COLORS = {
@@ -291,13 +291,7 @@ class Installer:
             pass
         _call_subprocess([str(venv_python), "-m", "pip", "install", "-IU", "pip"])
 
-        if self.version:
-            if self.version.upper() == "HEAD":
-                req = f"git+{REPO}.git@main#egg=pdm"
-            else:
-                req = f"pdm=={self.version}"
-        else:
-            req = "pdm"
+        req = f"git+{REPO}.git@main#egg=pdm"
         args = [req] + [d for d in self.additional_deps if d]
         if self.prerelease:
             args.insert(0, "--pre")
