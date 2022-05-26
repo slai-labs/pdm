@@ -20,9 +20,13 @@ class Command(BaseCommand):
     def set_interactive(self, value: bool) -> None:
         self.interactive = value
 
+    def set_python_runtime(self, value: str) -> None:
+        self.python_runtime = value
+
     def ask(self, question: str, default: str) -> str:
         if not self.interactive:
             return default
+
         return click.prompt(question, default=default)
 
     def add_arguments(self, parser: argparse.ArgumentParser) -> None:
@@ -31,6 +35,12 @@ class Command(BaseCommand):
             "--non-interactive",
             action="store_true",
             help="Don't ask questions but use default values",
+        )
+        parser.add_argument(
+            "-r",
+            "--runtime",
+            default="3",
+            help="Set python runtime",
         )
         parser.set_defaults(search_parent=False)
 
@@ -45,17 +55,21 @@ class Command(BaseCommand):
             project.core.ui.echo(
                 "{}".format(termui.cyan("Creating a pyproject.toml for PDM..."))
             )
+
         self.set_interactive(not options.non_interactive)
+        self.set_python_runtime(options.runtime)
 
         if self.interactive:
             actions.do_use(project)
         else:
-            actions.do_use(project, "3", True)
+            actions.do_use(project, self.python_runtime, True)
+
         is_library = (
             click.confirm("Is the project a library that will be uploaded to PyPI?")
             if self.interactive
             else False
         )
+
         if is_library:
             name = self.ask("Project name", project.root.name)
             version = self.ask("Project version", "0.1.0")
