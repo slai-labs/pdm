@@ -103,9 +103,7 @@ class Command(BaseCommand):
         if self.interactive:
             actions.ask_for_import(project)
         else:
-            actions.do_import(
-                project, str("/store/env/requirements.txt"), "requirements"
-            )
+            actions.do_import(project, "/store/env/requirements.txt", "requirements")
 
 
 signals.post_init.connect(run_script_if_present("post_init"), weak=False)

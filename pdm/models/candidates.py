@@ -428,6 +428,10 @@ class PreparedCandidate:
         )
 
     def should_cache(self) -> bool:
+        # Optional flag to skip cache
+        if os.getenv("PDM_SKIP_CACHE", "false") == "true":
+            return False
+
         """Determine whether to cache the dependencies and built wheel."""
         link, source_dir = self.ireq.original_link, self.ireq.source_dir
         if self.req.is_vcs and not self.req.editable:
