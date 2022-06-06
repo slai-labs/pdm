@@ -267,7 +267,10 @@ class StashedRemovePaths(BaseRemovePaths):
         self._saved_pth = None
         if self.refer_to:
             termui.logger.debug("Unlink from cached package %s", self.refer_to)
-            CachedPackage(self.refer_to).remove_referrer(os.path.dirname(self.refer_to))
+            if not os.getenv("PDM_SKIP_CACHE", "false") != "true":
+                CachedPackage(self.refer_to).remove_referrer(
+                    os.path.dirname(self.refer_to)
+                )
             self.refer_to = None
 
     def rollback(self) -> None:
