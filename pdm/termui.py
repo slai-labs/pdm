@@ -40,6 +40,9 @@ def centerize(text: str, length: int) -> str:
 
 
 def supports_ansi() -> bool:
+    if os.getenv("SUPPORTS_ANSI", None) is not None:
+        return True
+
     if os.getenv("CI") or not hasattr(sys.stdout, "fileno"):
         return False
     if sys.platform == "win32":
