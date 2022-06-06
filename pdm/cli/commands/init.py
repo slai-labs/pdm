@@ -121,7 +121,9 @@ class Command(BaseCommand):
         if self.interactive:
             actions.ask_for_import(project)
         else:
-            actions.do_import(project, "/store/env/requirements.txt", "requirements")
+            store_path = "/store/env/requirements.txt"
+            if os.path.exists(store_path):
+                actions.do_import(project, store_path, "requirements")
 
 
 signals.post_init.connect(run_script_if_present("post_init"), weak=False)
