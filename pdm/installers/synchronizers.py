@@ -109,8 +109,6 @@ class Synchronizer:
         self.working_set = environment.get_working_set()
         self.ui = environment.project.core.ui
 
-        self.CANDIDATE_BLACKLIST = ["functools32 3.2.3.post2"]
-
         if isinstance(self.no_editable, Collection):
             keys = self.no_editable
         elif self.no_editable:
@@ -208,12 +206,7 @@ class Synchronizer:
             try:
                 self.manager.install(can)
             except Exception:
-
                 spinner.fail(f"Install {can.format()} failed")
-
-                if can.format() in self.CANDIDATE_BLACKLIST:
-                    return can
-
                 raise
             else:
                 spinner.succeed(f"Install {can.format()} successful")
