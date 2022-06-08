@@ -627,7 +627,7 @@ def do_use(
                 show_choices=False,
             )
             selected_python = matching_interperters[int(selection)]
-        if python:
+        if python and os.getenv("PDM_SKIP_CACHE", "false") != "true":
             use_cache.set(python, selected_python.path.as_posix())
 
     if not selected_python.valid:
