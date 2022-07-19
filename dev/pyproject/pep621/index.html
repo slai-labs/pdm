@@ -9,19 +9,20 @@
       
       
       <link rel="icon" href="../../assets/logo.svg">
-      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.9">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.3.9">
     
     
       
-        <title>Benchmark - PDM - Python Development Master</title>
+        <title>PEP 621 Metadata - PDM</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.120efc48.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.1d29e8d0.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.9647289d.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.cbb835fc.min.css">
         
+      
       
     
     
@@ -65,7 +66,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#benchmark" class="md-skip">
+        <a href="#pep-621-metadata" class="md-skip">
           Skip to content
         </a>
       
@@ -97,12 +98,20 @@
       
     </div>
     
+      <div data-md-component="outdated" hidden>
+        <aside class="md-banner md-banner--warning">
+          
+        </aside>
+      </div>
+    
     
       
 
-<header class="md-header" data-md-component="header">
+  
+
+<header class="md-header md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="PDM - Python Development Master" class="md-header__button md-logo" aria-label="PDM - Python Development Master" data-md-component="logo">
+    <a href="../.." title="PDM" class="md-header__button md-logo" aria-label="PDM" data-md-component="logo">
       
   <img src="../../assets/logo.svg" alt="logo">
 
@@ -114,13 +123,13 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            PDM - Python Development Master
+            PDM
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Benchmark
+              PEP 621 Metadata
             
           </span>
         </div>
@@ -199,13 +208,88 @@
     
   </nav>
   
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        Usage
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="./" class="md-tabs__link md-tabs__link--active">
+        Writing pyproject.toml
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../plugin/write/" class="md-tabs__link">
+        Plugins
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../dev/contributing/" class="md-tabs__link">
+        Development
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
 </header>
     
     <div class="md-container" data-md-component="container">
       
       
-        
-          
         
       
       <main class="md-main" data-md-component="main">
@@ -218,15 +302,17 @@
                   <div class="md-sidebar__inner">
                     
 
+  
 
-<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="PDM - Python Development Master" class="md-nav__button md-logo" aria-label="PDM - Python Development Master" data-md-component="logo">
+    <a href="../.." title="PDM" class="md-nav__button md-logo" aria-label="PDM" data-md-component="logo">
       
   <img src="../../assets/logo.svg" alt="logo">
 
     </a>
-    PDM - Python Development Master
+    PDM
   </label>
   
     <div class="md-nav__source">
@@ -250,37 +336,22 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../.." class="md-nav__link">
-        Home
-      </a>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
     
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_1" type="checkbox" id="__nav_1" >
       
       
       
       
-        <label class="md-nav__link" for="__nav_2">
+        <label class="md-nav__link" for="__nav_1">
           Usage
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="Usage" data-md-level="1">
-        <label class="md-nav__title" for="__nav_2">
+        <label class="md-nav__title" for="__nav_1">
           <span class="md-nav__icon md-icon"></span>
           Usage
         </label>
@@ -292,8 +363,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../../usage/dependency/" class="md-nav__link">
-        Manage Dependencies
+      <a href="../.." class="md-nav__link">
+        Home
       </a>
     </li>
   
@@ -320,6 +391,48 @@
   
   
     <li class="md-nav__item">
+      <a href="../../usage/venv/" class="md-nav__link">
+        Working with virtualenv
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../usage/pep582/" class="md-nav__link">
+        Working with PEP 582
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../usage/dependency/" class="md-nav__link">
+        Manage Dependencies
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../usage/scripts/" class="md-nav__link">
         PDM Scripts
       </a>
@@ -334,8 +447,204 @@
   
   
     <li class="md-nav__item">
+      <a href="../../usage/hooks/" class="md-nav__link">
+        Lifecycle and hooks
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../usage/advanced/" class="md-nav__link">
         Advanced Usage
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../usage/cli_reference/" class="md-nav__link">
+        CLI Reference
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../usage/configuration/" class="md-nav__link">
+        Configuration
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2">
+          Writing pyproject.toml
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Writing pyproject.toml" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Writing pyproject.toml
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          PEP 621 Metadata
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        PEP 621 Metadata
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#multiline-description" class="md-nav__link">
+    Multiline description
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#package-version" class="md-nav__link">
+    Package version
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dependency-specification" class="md-nav__link">
+    Dependency specification
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#optional-dependencies" class="md-nav__link">
+    Optional dependencies
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#console-scripts" class="md-nav__link">
+    Console scripts
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#entry-points" class="md-nav__link">
+    Entry points
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tool-pdm/" class="md-nav__link">
+        PDM Tool Settings
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../build/" class="md-nav__link">
+        Build Configuration
       </a>
     </li>
   
@@ -365,89 +674,12 @@
       
       
         <label class="md-nav__link" for="__nav_3">
-          Writing pyproject.toml
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="Writing pyproject.toml" data-md-level="1">
-        <label class="md-nav__title" for="__nav_3">
-          <span class="md-nav__icon md-icon"></span>
-          Writing pyproject.toml
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../pyproject/pep621/" class="md-nav__link">
-        PEP 621 Metadata
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../pyproject/tool-pdm/" class="md-nav__link">
-        PDM Tool Settings
-      </a>
-    </li>
-  
-
-            
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../configuration/" class="md-nav__link">
-        Configuration
-      </a>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
-      
-      
-      
-      
-        <label class="md-nav__link" for="__nav_5">
           Plugins
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="Plugins" data-md-level="1">
-        <label class="md-nav__title" for="__nav_5">
+        <label class="md-nav__title" for="__nav_3">
           <span class="md-nav__icon md-icon"></span>
           Plugins
         </label>
@@ -493,25 +725,23 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
       
       
       
       
-        <label class="md-nav__link" for="__nav_6">
+        <label class="md-nav__link" for="__nav_4">
           Development
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="Development" data-md-level="1">
-        <label class="md-nav__title" for="__nav_6">
+        <label class="md-nav__title" for="__nav_4">
           <span class="md-nav__icon md-icon"></span>
           Development
         </label>
@@ -523,7 +753,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../contributing/" class="md-nav__link">
+      <a href="../../dev/contributing/" class="md-nav__link">
         Contributing
       </a>
     </li>
@@ -537,8 +767,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../changelog/" class="md-nav__link">
-        Change Log
+      <a href="../../dev/changelog/" class="md-nav__link">
+        Changelog
       </a>
     </li>
   
@@ -549,86 +779,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Benchmark
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../dev/benchmark/" class="md-nav__link">
         Benchmark
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#run-the-benchmarking-script" class="md-nav__link">
-    Run the benchmarking script
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#benchmark-results" class="md-nav__link">
-    Benchmark results
-  </a>
-  
-    <nav class="md-nav" aria-label="Benchmark results">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#environment" class="md-nav__link">
-    Environment
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#base-dependency-set" class="md-nav__link">
-    Base dependency set
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#result" class="md-nav__link">
-    Result
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -667,43 +822,44 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#run-the-benchmarking-script" class="md-nav__link">
-    Run the benchmarking script
+  <a href="#multiline-description" class="md-nav__link">
+    Multiline description
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#benchmark-results" class="md-nav__link">
-    Benchmark results
-  </a>
-  
-    <nav class="md-nav" aria-label="Benchmark results">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#environment" class="md-nav__link">
-    Environment
+  <a href="#package-version" class="md-nav__link">
+    Package version
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#base-dependency-set" class="md-nav__link">
-    Base dependency set
+      
+        <li class="md-nav__item">
+  <a href="#dependency-specification" class="md-nav__link">
+    Dependency specification
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#result" class="md-nav__link">
-    Result
+      
+        <li class="md-nav__item">
+  <a href="#optional-dependencies" class="md-nav__link">
+    Optional dependencies
   </a>
   
 </li>
-        
-      </ul>
-    </nav>
+      
+        <li class="md-nav__item">
+  <a href="#console-scripts" class="md-nav__link">
+    Console scripts
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#entry-points" class="md-nav__link">
+    Entry points
+  </a>
   
 </li>
       
@@ -719,93 +875,65 @@
             <article class="md-content__inner md-typeset">
               
                 
-  <a href="https://github.com/pdm-project/pdm/edit/main/docs/docs/dev/benchmark.md" title="Edit this page" class="md-content__button md-icon">
+  <a href="https://github.com/pdm-project/pdm/edit/main/docs/docs/pyproject/pep621.md" title="Edit this page" class="md-content__button md-icon">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
   </a>
 
 
 
-<h1 id="benchmark">Benchmark<a class="headerlink" href="#benchmark" title="Permanent link">#</a></h1>
-<h2 id="run-the-benchmarking-script">Run the benchmarking script<a class="headerlink" href="#run-the-benchmarking-script" title="Permanent link">#</a></h2>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>pdm run benchmark
-</code></pre></div>
-</td></tr></table>
-<h2 id="benchmark-results">Benchmark results<a class="headerlink" href="#benchmark-results" title="Permanent link">#</a></h2>
-<h3 id="environment">Environment<a class="headerlink" href="#environment" title="Permanent link">#</a></h3>
-<p>GitHub Actions Ubuntu 21.04 virtual environment(2C8G).</p>
-<h3 id="base-dependency-set">Base dependency set<a class="headerlink" href="#base-dependency-set" title="Permanent link">#</a></h3>
-<p>(The format varies on different tools.)</p>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<h1 id="pep-621-metadata">PEP 621 Metadata<a class="headerlink" href="#pep-621-metadata" title="Permanent link">#</a></h1>
+<p>The project metadata are stored in the <code>pyproject.toml</code>. The specifications are defined by <a href="https://www.python.org/dev/peps/pep-0621/">PEP 621</a>, <a href="https://www.python.org/dev/peps/pep-0631/">PEP 631</a> and <a href="https://www.python.org/dev/peps/pep-0639/">PEP 639</a>. Read the detailed specifications in the PEPs.</p>
+<p><em>In the following part of this document, metadata should be written under <code>[project]</code> table if not given explicitly.</em></p>
+<h2 id="multiline-description">Multiline description<a class="headerlink" href="#multiline-description" title="Permanent link">#</a></h2>
+<p>You can split a long description onto multiple lines, thanks to TOML support for multiline strings.
+Just remember to escape new lines, so the final description appears
+<a href="https://packaging.python.org/specifications/core-metadata/#summary">on one line only in your package metadata</a>.
+Indentation will be removed as well when escaping new lines:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
-<span class="normal">3</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>requests @ git+https://github.com/psf/requests.git@v2.25.0  # a VCS dependency
-pandas&gt;=1.2.5,&lt;2  # a package with heavy prebuilt binaries
-pytest~=5.2   # a package with many child dependencies
-</code></pre></div>
-</td></tr></table>
-<h3 id="result">Result<a class="headerlink" href="#result" title="Permanent link">#</a></h3>
-<p>(The time elapse is not averaged over multiple runs. One may expect some differences between runs.)</p>
-<script src="https://code.highcharts.com/highcharts.js"></script>
-<script src="https://code.highcharts.com/modules/accessibility.js"></script>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">description</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;&quot;&quot;\</span>
+<span class="s">    Lorem ipsum dolor sit amet, consectetur adipiscing elit, \</span>
+<span class="s">    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. \</span>
+<span class="s">    Ut enim ad minim veniam, quis nostrud exercitation ullamco \</span>
+<span class="s">    laboris nisi ut aliquip ex ea commodo consequat.\</span>
+<span class="s">&quot;&quot;&quot;</span><span class="w"></span>
+</code></pre></div></td></tr></table></div>
+<p>See <a href="https://toml.io/en/v1.0.0#string">TOML's specification on strings</a>.</p>
+<h2 id="package-version">Package version<a class="headerlink" href="#package-version" title="Permanent link">#</a></h2>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Static</label><label for="__tabbed_1_2">Dynamic</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">[project]</span><span class="w"></span>
+<span class="n">version</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;1.0.0&quot;</span><span class="w"></span>
+</code></pre></div></td></tr></table></div>
+</div>
+<div class="tabbed-block">
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">[project]</span><span class="w"></span>
+<span class="p">...</span><span class="w"></span>
+<span class="n">dynamic</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s">&quot;version&quot;</span><span class="p">]</span><span class="w"></span>
 
-<figure class="highcharts-figure">
-    <div id="container"></div>
-</figure>
-
-<script>
-Highcharts.chart('container', {
-    chart: {
-        type: 'column'
-    },
-    title: {
-        text: 'Benchmark'
-    },
-    xAxis: {
-        categories: [
-            'Lock',
-            'Lock+cache',
-            'Install',
-            'Add',
-            'Add+cache'
-        ],
-        crosshair: true
-    },
-    yAxis: {
-        min: 0,
-        title: {
-            text: 'Time (s)'
-        }
-    },
-    tooltip: {
-        headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
-        pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
-            '<td style="padding:0"><b>{point.y:.1f}s</b></td></tr>',
-        footerFormat: '</table>',
-        shared: true,
-        useHTML: true
-    },
-    plotOptions: {
-        column: {
-            pointPadding: 0.2,
-            borderWidth: 0
-        }
-    },
-    series: [{
-        name: 'Pipenv',
-        data: [46.43, 55.81, 25.16, 84.44, 83.33]
-
-    }, {
-        name: 'Poetry',
-        data: [76.95, 39.08, 17.82, 37.24, 43.90]
-
-    }, {
-        name: 'PDM',
-        data: [27.56, 21.91, 12.16, 37.26, 26.84]
-
-    }]
-});
-</script>
-
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="k">[tool.pdm]</span><span class="w"></span>
+<span class="n">version</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">source</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;file&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">path</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;mypackage/__version__.py&quot;</span><span class="w"> </span><span class="p">}</span><span class="w"></span>
+</code></pre></div></td></tr></table></div>
+<p>The version will be read from the <code>mypackage/__version__.py</code> file searching for the pattern: <code>__version__ = "{version}"</code>.</p>
+<p>Read more information about other configurations in <a href="../build/#dynamic-versioning">dynamic versioning</a>.</p>
+</div>
+</div>
+</div>
+<h2 id="dependency-specification">Dependency specification<a class="headerlink" href="#dependency-specification" title="Permanent link">#</a></h2>
+<p>The <code>project.dependencies</code> is an array of dependency specification strings following the <a href="https://www.python.org/dev/peps/pep-0440/">PEP 440</a>
+and <a href="https://www.python.org/dev/peps/pep-0508/">PEP 508</a>.</p>
+<p>Examples:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
 <span class="normal"> 4</span>
@@ -816,42 +944,73 @@ Highcharts.chart('container', {
 <span class="normal"> 9</span>
 <span class="normal">10</span>
 <span class="normal">11</span>
-<span class="normal">12</span>
-<span class="normal">13</span>
-<span class="normal">14</span>
-<span class="normal">15</span>
-<span class="normal">16</span>
-<span class="normal">17</span>
-<span class="normal">18</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>Running benchmark: pipenv, version 2021.11.23
-   Lock dependencies without cache: 46.43s
-      Lock dependencies with cache: 55.81s
-              Install dependencies: 25.16s
-       Add dependencies with cache: 83.33s
-    Add dependencies without cache: 84.44s
-Running benchmark: Poetry version 1.1.12
-   Lock dependencies without cache: 76.95s
-      Lock dependencies with cache: 39.08s
-              Install dependencies: 17.82s
-       Add dependencies with cache: 43.90s
-    Add dependencies without cache: 37.24s
-Running benchmark: Python Development Master (PDM), version 1.11.2
-   Lock dependencies without cache: 27.56s
-      Lock dependencies with cache: 21.91s
-              Install dependencies: 12.16s
-       Add dependencies with cache: 26.84s
-    Add dependencies without cache: 37.26s
-</code></pre></div>
-</td></tr></table>
-<p>Comments:</p>
-<ol>
-<li><code>Install Dependencies</code> is to sync the working set with the lock file.</li>
-<li><code>Add Dependencies</code> is to add the dependencies to the working set and existing lock file.
-   Poetry's command is <code>poetry add</code>, Pipenv's command is <code>pipenv install --keep-outdated</code> and
-   PDM's command is <code>pdm add</code></li>
-</ol>
+<span class="normal">12</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">[project]</span><span class="w"></span>
+<span class="p">...</span><span class="w"></span>
+<span class="n">dependencies</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="w"></span>
+<span class="w">    </span><span class="c1"># Named requirement</span><span class="w"></span>
+<span class="w">    </span><span class="s">&quot;requests&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="c1"># Named requirement with version specifier</span><span class="w"></span>
+<span class="w">    </span><span class="s">&quot;flask &gt;= 1.1.0&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="c1"># Requirement with environment marker</span><span class="w"></span>
+<span class="w">    </span><span class="s">&quot;pywin32; sys_platform == &#39;win32&#39;&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="c1"># URL requirement</span><span class="w"></span>
+<span class="w">    </span><span class="s">&quot;pip @ git+https://github.com/pypa/pip.git@20.3.1&quot;</span><span class="w"></span>
+<span class="p">]</span><span class="w"></span>
+</code></pre></div></td></tr></table></div>
+<h2 id="optional-dependencies">Optional dependencies<a class="headerlink" href="#optional-dependencies" title="Permanent link">#</a></h2>
+<p>You can have some requirements optional, which is similar to <code>setuptools</code>' <code>extras_require</code> parameter.</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">[project.optional-dependencies]</span><span class="w"></span>
+<span class="n">socks</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="w"> </span><span class="s">&#39;PySocks &gt;= 1.5.6, != 1.5.7, &lt; 2&#39;</span><span class="w"> </span><span class="p">]</span><span class="w"></span>
+<span class="n">tests</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="w"></span>
+<span class="w">  </span><span class="s">&#39;ddt &gt;= 1.2.2, &lt; 2&#39;</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="s">&#39;pytest &lt; 6&#39;</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="s">&#39;mock &gt;= 1.0.1, &lt; 4; python_version &lt; &quot;3.4&quot;&#39;</span><span class="p">,</span><span class="w"></span>
+<span class="p">]</span><span class="w"></span>
+</code></pre></div></td></tr></table></div>
+<p>To install a group of optional dependencies:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>pdm install -G socks
+</code></pre></div></td></tr></table></div>
+<p><code>-G</code> option can be given multiple times to include more than one group.</p>
+<h2 id="console-scripts">Console scripts<a class="headerlink" href="#console-scripts" title="Permanent link">#</a></h2>
+<p>The following content:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">[project.scripts]</span><span class="w"></span>
+<span class="n">mycli</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;mycli.__main__:main&quot;</span><span class="w"></span>
+</code></pre></div></td></tr></table></div>
+<p>will be translated to <code>setuptools</code> style:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">entry_points</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;console_scripts&#39;</span><span class="p">:</span> <span class="p">[</span>
+        <span class="s1">&#39;mycli=mycli.__main__:main&#39;</span>
+    <span class="p">]</span>
+<span class="p">}</span>
+</code></pre></div></td></tr></table></div>
+<p>Also, <code>[project.gui-scripts]</code> will be translated to <code>gui_scripts</code> entry points group in <code>setuptools</code> style.</p>
+<h2 id="entry-points">Entry points<a class="headerlink" href="#entry-points" title="Permanent link">#</a></h2>
+<p>Other types of entry points are given by <code>[project.entry-points.&lt;type&gt;]</code> section, with the same
+format of <code>[project.scripts]</code>:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">[project.entry-points.pytest11]</span><span class="w"></span>
+<span class="n">myplugin</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;mypackage.plugin:pytest_plugin&quot;</span><span class="w"></span>
+</code></pre></div></td></tr></table></div>
+<p>If the entry point name contains dots or other special characters, wrap it in quotes:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">[project.entry-points.&quot;flake8.extension&quot;]</span><span class="w"></span>
+<span class="n">myplugin</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;mypackage.plugin:flake8_plugin&quot;</span><span class="w"></span>
+</code></pre></div></td></tr></table></div>
 
               
             </article>
+            
           </div>
         </div>
         
@@ -859,10 +1018,11 @@ Running benchmark: Python Development Master (PDM), version 1.11.2
       
         <footer class="md-footer">
   
-    <nav class="md-footer__inner md-grid" aria-label="Footer">
+    
+    <nav class="md-footer__inner md-grid" aria-label="Footer" >
       
         
-        <a href="../changelog/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Change Log" rel="prev">
+        <a href="../../usage/configuration/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Configuration" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
           </div>
@@ -871,11 +1031,26 @@ Running benchmark: Python Development Master (PDM), version 1.11.2
               <span class="md-footer__direction">
                 Previous
               </span>
-              Change Log
+              Configuration
             </div>
           </div>
         </a>
       
+      
+        
+        <a href="../tool-pdm/" class="md-footer__link md-footer__link--next" aria-label="Next: PDM Tool Settings" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              PDM Tool Settings
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
       
     </nav>
   
@@ -884,7 +1059,7 @@ Running benchmark: Python Development Master (PDM), version 1.11.2
       <div class="md-copyright">
   
     <div class="md-copyright__highlight">
-      Copyright &copy; 2019-2021 <a href="https://frostming.com">Frost Ming</a>
+      Copyright &copy; 2019 <a href="https://frostming.com">Frost Ming</a>
     </div>
   
   
@@ -934,10 +1109,10 @@ Running benchmark: Python Development Master (PDM), version 1.11.2
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.2a1c317c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky"], "search": "../../assets/javascripts/workers/search.b97dbffb.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "version": {"provider": "mike"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.6e54b5cd.min.js"></script>
+      <script src="../../assets/javascripts/bundle.6c7ad80a.min.js"></script>
       
     
   </body>
