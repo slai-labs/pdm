@@ -59,6 +59,7 @@ def do_lock(
 ) -> dict[str, Candidate]:
     """Performs the locking process and update lockfile."""
     check_project_file(project)
+
     if refresh:
         locked_repo = project.locked_repository
         repo = project.get_repository()
@@ -76,6 +77,7 @@ def do_lock(
             lockfile = format_lockfile(project, mapping, dependencies)
         project.write_lockfile(lockfile)
         return mapping
+
     # TODO: multiple dependency definitions for the same package.
     provider = project.get_provider(strategy, tracked_names)
     if not requirements:
@@ -84,6 +86,8 @@ def do_lock(
         ]
     resolve_max_rounds = int(project.config["strategy.resolve_max_rounds"])
     ui = project.core.ui
+
+    # TODO: luke
     with ui.logging("lock"):
         # The context managers are nested to ensure the spinner is stopped before
         # any message is thrown to the output.
@@ -91,6 +95,7 @@ def do_lock(
             reporter = project.get_reporter(requirements, tracked_names, spin)
             resolver: Resolver = project.core.resolver_class(provider, reporter)
             signals.pre_lock.send(project, requirements=requirements, dry_run=dry_run)
+
             try:
                 mapping, dependencies = resolve(
                     resolver,
@@ -115,6 +120,7 @@ def do_lock(
             else:
                 data = format_lockfile(project, mapping, dependencies)
                 spin.succeed(f"{termui.Emoji.LOCK} Lock successful")
+
             signals.post_lock.send(project, resolution=mapping, dry_run=dry_run)
 
     project.write_lockfile(data, write=not dry_run)

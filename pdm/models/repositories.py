@@ -6,7 +6,7 @@ from functools import lru_cache, wraps
 from typing import TYPE_CHECKING, Any, Callable, Iterable, Mapping, TypeVar, cast
 
 from packaging.version import parse as parse_version
-from pip._vendor.html5lib import parse
+from html5lib import parse
 
 from pdm import termui
 from pdm._types import CandidateInfo, Package, SearchResult, Source
