@@ -17,7 +17,7 @@ class InstallManager:
     """The manager that performs the installation and uninstallation actions."""
 
     # The packages below should not be cached.
-    NO_CACHE_PACKAGES = ["editables", "opencv-python", "opencv-python-headless"]
+    NO_CACHE_PACKAGES = ["editables", "opencv-python", "opencv-python-headless", "mediapipe"]
 
     def __init__(
         self, environment: Environment, *, use_install_cache: bool = False
