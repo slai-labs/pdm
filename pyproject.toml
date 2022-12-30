@@ -13,7 +13,7 @@ dependencies = [
     "findpython",
     "importlib-metadata; python_version < \"3.8\"",
     "installer>=0.5.1,<0.6",
-    "packaging",
+    "packaging==21.3",
     "pdm-pep517>=0.9,<1",
     "pep517>=0.11.0",
     "pip>=20.1",
